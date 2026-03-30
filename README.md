@@ -9,6 +9,7 @@ A repository containing introductions to advanced geospatial methods.
 | # | Method | Description | Package | Reference |
 |---|--------|-------------|---------|-----------|
 | 1 | Neural networks for geospatial data | NN-GLS: combines MLP, Gaussian processes, and GLS loss for spatial data analysis | [geospaNN](https://pypi.org/project/geospaNN) | [Zhan & Datta (2024)](https://www.tandfonline.com/doi/abs/10.1080/01621459.2024.2356293) |
+| 2 | Multiscale Similarity and Geographically Weighted Regression | M-SGWR: extends GWR by combining geographic proximity and attribute similarity via predictor-specific alpha weights | [M-SGWR](https://github.com/Lessani252/M-SGWR) | [Lessani & Li (2026)](https://arxiv.org/abs/2601.19888) |
 
 ---
 
@@ -50,3 +51,29 @@ To scale to large datasets (up to ~500,000 observations), **geospaNN** approxima
 Zhan, W., & Datta, A. (2024). Neural networks for geospatial data. *Journal of the American Statistical Association*, 119(548), 1–13. <https://www.tandfonline.com/doi/abs/10.1080/01621459.2024.2356293>
 
 > Acknowledgement: This work is supported by National Institute of Environmental Health Sciences grant R01ES033739.
+
+---
+
+## 2. Multiscale Similarity and Geographically Weighted Regression: an application of M-SGWR
+
+### Overview
+
+**M-SGWR** (Multiscale Similarity-based Geographically Weighted Regression) extends traditional local regression frameworks—GWR and MGWR—by characterising spatial interaction across two dimensions: **geographic proximity** and **attribute (variable) similarity**. For each predictor, geographic and attribute-based weight matrices are constructed separately and combined using an optimised parameter *alpha*, which governs their relative contribution to local model fitting. Analogous to variable-specific bandwidths in MGWR, the optimal *alpha* varies by predictor, allowing the model to account for purely geographic, mixed, or non-spatial (remote similarity) effects. Simulation experiments and an empirical application show that M-SGWR consistently outperforms GWR, SGWR, and MGWR across all goodness-of-fit metrics.
+
+### Key features
+
+- Dual-dimension weighting: geographic proximity + attribute similarity per predictor.
+- Predictor-specific *alpha* optimisation (analogous to variable-specific bandwidths in MGWR).
+- Compatible with standard GWR diagnostics (AIC, AICc, local R², t-values).
+
+### Package
+
+- **Source code**: [https://github.com/Lessani252/M-SGWR](https://github.com/Lessani252/M-SGWR)
+
+### Authors
+
+**Alireza Lessani** and **Zhenlong Li**, University of South Carolina.
+
+### Reference
+
+Lessani, A., & Li, Z. (2026). Multiscale similarity and geographically weighted regression. *arXiv preprint*. <https://arxiv.org/abs/2601.19888>
