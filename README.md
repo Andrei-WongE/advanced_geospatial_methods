@@ -6,10 +6,10 @@ A repository containing introductions to advanced geospatial methods.
 
 ## Summary table
 
-| # | Method | Description | Package | Reference |
-|---|--------|-------------|---------|-----------|
-| 1 | Neural networks for geospatial data | NN-GLS: combines MLP, Gaussian processes, and GLS loss for spatial data analysis | [geospaNN](https://pypi.org/project/geospaNN) | [Zhan & Datta (2024)](https://www.tandfonline.com/doi/abs/10.1080/01621459.2024.2356293) |
-| 2 | Multiscale Similarity and Geographically Weighted Regression | M-SGWR: extends GWR by combining geographic proximity and attribute similarity via predictor-specific alpha weights | [M-SGWR](https://github.com/Lessani252/M-SGWR) | [Lessani & Li (2026)](https://arxiv.org/abs/2601.19888) |
+| # | Method | Description | Package | Reference | Example |
+|---|--------|-------------|---------|-----------|-----------|
+| 1 | Neural networks for geospatial data | NN-GLS: combines MLP, Gaussian processes, and GLS loss for spatial data analysis | [geospaNN](https://pypi.org/project/geospaNN) | [Zhan & Datta (2024)](https://www.tandfonline.com/doi/abs/10.1080/01621459.2024.2356293) |[GeoNN.ipynb](GeoNN.ipynb)|
+| 2 | Multiscale Similarity and Geographically Weighted Regression | M-SGWR: extends GWR by combining geographic proximity and attribute similarity via predictor-specific alpha weights | [M-SGWR](https://github.com/Lessani252/M-SGWR) | [Lessani & Li (2026)](https://arxiv.org/abs/2601.19888) ||
 
 ---
 
@@ -41,6 +41,10 @@ To scale to large datasets (up to ~500,000 observations), **geospaNN** approxima
 - **PyPI**: [https://pypi.org/project/geospaNN](https://pypi.org/project/geospaNN)
 - **Documentation & examples**: [https://wentaozhan1998.github.io/geospaNN-doc/](https://wentaozhan1998.github.io/geospaNN-doc/)
 - **Source code**: [https://github.com/WentaoZhan1998/geospaNN](https://github.com/WentaoZhan1998/geospaNN)
+
+### Example
+
+[GeoNN.ipynb](GeoNN.ipynb)
 
 ### Authors
 
