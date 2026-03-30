@@ -16,7 +16,7 @@ A repository containing introductions to advanced geospatial methods.
 
 ### Overview
 
-**GeospaNN** is a Python package that implements **NN-GLS** (Neural Networks with Generalized Least Squares), a geographically-informed Graph Neural Network (GNN) for analysing large and irregular geospatial data. The method was proposed by Zhan & Datta (2024) and explicitly accounts for spatial correlation in the data.
+**GeospaNN** is a Python package that implements **NN-GLS** (Neural Networks with Generalized Least Squares), a geographically-informed Graph Neural Network (GNN) for analyzing large and irregular geospatial data. The method was proposed by Zhan & Datta (2024) and explicitly accounts for spatial correlation in the data.
 
 Geospatial data naturally exhibits spatial dependence. Traditional geostatistical methods handle this through model-based approaches such as Gaussian processes (GP), while artificial neural networks (NNs) can capture non-linear regression functions but typically ignore spatial correlation. **NN-GLS** bridges these two worlds:
 
